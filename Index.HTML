@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <title>ILP: Progression of Legislation of Civil Rights</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@1,300&display=swap');
+
+        body {
+            background-color: #1a1515
+        }
+
+        a {
+            color: cadetblue
+        }
+
+            a:hover {
+                color: #FFCC00;
+            }
+
+        img {
+            max-width: 100%;
+        }
+
+        .ag-format-container {
+            width: 1160px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ag-timeline-block {
+            padding: 300px 0;
+        }
+
+        .ag-timeline_title-box {
+            padding: 0 0 30px;
+            text-align: center;
+        }
+
+        .ag-timeline_tagline {
+            font-size: 40px;
+            color: #FFF;
+        }
+
+        .ag-timeline_title {
+            background-color: #FFF8DC;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-fill-color: transparent;
+            color: transparent;
+            font-size: 80px;
+        }
+
+        .ag-timeline_item {
+            margin: 0 0 50px;
+            position: relative;
+        }
+
+            .ag-timeline_item:nth-child(2n) {
+                text-align: right;
+            }
+
+        .ag-timeline {
+            display: inline-block;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ag-timeline_line {
+            width: 2px;
+            background-color: #393935;
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            bottom: 0;
+            overflow: hidden;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        .ag-timeline_line-progress {
+            width: 100%;
+            height: 20%;
+            background-color: #D7BE69;
+        }
+
+        .ag-timeline-card_box {
+            padding: 0 0 20px 50%;
+        }
+
+        .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+            padding: 0 50% 20px 0;
+        }
+
+
+        .ag-timeline-card_point-box {
+            display: inline-block;
+            margin: 0 14px 0 -28px;
+        }
+
+        .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+            margin: 0 -28px 0 14px;
+        }
+
+        .ag-timeline-card_point {
+            height: 50px;
+            line-height: 50px;
+            width: 50px;
+            border: 3px solid #FFF;
+            background-color: #1d1d1b;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #FFF;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .js-ag-active .ag-timeline-card_point {
+            color: #000000;
+            background-color: #FFF
+        }
+
+
+        .js-ag-active .ag-timeline-card_point {
+            color: #000000;
+            background-color: #FFF;
+        }
+
+        .ag-timeline-card_meta-box {
+            display: inline-block;
+        }
+
+        .ag-timeline-card_meta {
+            margin: 10px 0 0;
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 28px;
+            color: #FFE4C4;
+        }
+
+        .ag-timeline-card_item {
+            display: inline-block;
+            width: 45%;
+            margin: -77px 0 0;
+            background-color: #FFF;
+            opacity: 0;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 60px;
+            -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+            -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+            -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+            box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+            -webkit-transition: -webkit-transform .5s, opacity .5s;
+            -moz-transition: -moz-transform .5s, opacity .5s;
+            -o-transition: -o-transform .5s, opacity .5s;
+            transition: transform .5s, opacity .5s;
+            position: relative;
+            background-image: url(test.png)
+        }
+
+        .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+            -webkit-transform: translateX(-200%);
+            -moz-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            -o-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+
+        .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+            -webkit-transform: translateX(200%);
+            -moz-transform: translateX(200%);
+            -ms-transform: translateX(200%);
+            -o-transform: translateX(200%);
+            transform: translateX(200%);
+        }
+
+        .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+        .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        .ag-timeline-card_arrow {
+            height: 18px;
+            width: 18px;
+            margin-top: 20px;
+            background-color: #282828;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+            margin-left: calc(-18px / 2);
+            margin-right: calc(-18px / 2);
+        }
+
+        .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
+            margin-left: -10px;
+            right: auto;
+            left: 0;
+        }
+
+        .ag-timeline-card_img {
+            width: 100%;
+        }
+
+        .ag-timeline-card_info {
+            padding: 20px 30px;
+        }
+
+        .ag-timeline-card_title {
+            display: none;
+            margin: 10px 0 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            color: #FF0;
+        }
+
+        .ag-timeline-card_desc {
+            line-height: 1.45;
+            font-size: 16px;
+            color: #000000;
+            text-align: left;
+        }
+
+        /*
+        @media only screen and (max-width: 979px) {
+            .ag-timeline_line {
+                left: 30px;
+            }
+
+            .ag-timeline_item:nth-child(2n) {
+                text-align: left;
+            }
+
+                .ag-timeline-card_box,
+                .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+                    padding: 0 0 20px;
+                }
+
+            .ag-timeline-card_meta-box {
+                display: none;
+            }
+
+            .ag-timeline-card_point-box,
+            .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+                margin: 0 0 0 8px;
+            }
+
+            .ag-timeline-card_point {
+                height: 40px;
+                line-height: 40px;
+                width: 40px;
+            }
+
+            .ag-timeline-card_item {
+                width: auto;
+                margin: -65px 0 0 75px
+            }
+
+            .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+            .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+                -webkit-transform: translateX(200%);
+                -moz-transform: translateX(200%);
+                -ms-transform: translateX(200%);
+                -o-transform: translateX(200%);
+                transform: translateX(200%);
+            }
+
+            .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+                right: auto;
+                left: 0;
+            }
+
+            .ag-timeline-card_title {
+                display: block;
+            }
+
+            .ag-timeline-card_arrow {
+                margin-top: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .ag-format-container {
+                width: 96%;
+            }
+
+            .ag-timeline-card_img {
+                height: auto;
+                width: auto;
+            }
+        }
+
+        @media only screen and (max-width: 639px) {
+            .ag-timeline_title {
+                font-size: 60px;
+            }
+
+            .ag-timeline-card_info {
+                padding: 10px 15px;
+            }
+
+            .ag-timeline-card_desc {
+                font-size: 14px;
+               }
+        }
+
+        @media only screen and (max-width: 479px) {
+        }
+
+        @media (min-width: 768px) and (max-width: 979px) {
+            .ag-format-container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 980px) and (max-width: 1161px) {
+            .ag-format-container {
+                width: 960px;
+            }
+        }*/
+    </style>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <div class="ag-timeline-block">
+        <div class="ag-timeline_title-box">
+            <div class="ag-timeline_title">Progression of Civil Rights</div> <!--tITLE 2-->
+            <div class="ag-timeline_tagline">History of Civil Rights In The United States </div>  <!--tITLE 1-->
+        </div>
+        <section class="ag-section">
+            <div class="ag-format-container">
+                <div class="js-timeline ag-timeline">
+                    <div class="js-timeline_line ag-timeline_line">
+                        <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                    </div>
+                    <div class="ag-timeline_list">
+
+
+
+
+
+
+
+
+                        <!--Start of Left Side Entry-->
+                        <!--Entry Henry-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point">1865</div> <!-- Date goes here-->
+                                </div>
+                                <div class="ag-timeline-card_meta-box">
+                                    <div class="ag-timeline-card_meta"><bold>THIRTHEENTH AMENDMENT</bold><p style="font-size:12px"<center><bold>13 Stat. 567; 13 Stat 774</bold></center></p></div>  <!--Title goes here-->
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="13_amendment_image.jfif" class="ag-timeline-card_img" width="640" height="360" /> <!--Immage goes here-->
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+
+                                        <div class="ag-timeline-card_title">13_amendment_image</div> <!--Card Title goes here-->
+
+                                        <div class="ag-timeline-card_desc">
+
+                                            The <a href="https://www.archives.gov/milestone-documents/13th-amendment" target="_blank">Thirteenth Amendment</a> abolished slavery and involuntary servitudes, particularly as a punishment for a crime. This law was approved by the 38th Congress between 1863 and 1865. It was ratified by the states on December 6th, 1865.
+
+                                            <!--Text goes here-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry-->
+                        <!--Start of Right Side Entry-->
+                        <!--Entry Dad-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="ag-timeline-card_meta-box">
+                                    <!--notice these are in reverse order because these are on the right side-->
+                                    <div class="ag-timeline-card_meta">CIVIL RIGHTS ACT OF 1866<p style="font-size:12px"<center>14 Stat. 27</center></p></div>
+                                </div>
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="ag-timeline-card_point">1866</div>
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="R.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+                                        <div class="ag-timeline-card_title">Civil Rights Act of 1866</div>
+                                        <div class="ag-timeline-card_desc">
+                                            The <a href="http://memory.loc.gov/cgi-bin/ampage?collId=llsl&fileName=014/llsl014.db&recNum=058" target="_blank">Civil Rights Act of 1866</a>  stated that all persons born or naturalized in the United States would become a citizen, excluding Native Americans. The act also promised rights of all citizens to both make & enforce contracts and to purchase, sell and leave property. This was passed by the 39th Congress during 1865-1867.
+                                            The Civil Rights Act of 1866 was the first federal law in the United States to define citizenship and promise that all citizens are equally protected by the law.
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry-->
+                        <!--Start of Left Side Entry-->
+                        <!--Entry Henry-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="ag-timeline-card_point">1868</div> <!-- Date goes here-->
+                                </div>
+                                <div class="ag-timeline-card_meta-box">
+                                    <div class="ag-timeline-card_meta">FOURTEENTH AMENDMENT<p style="font-size:12px"<center>14 Stat. 358; 15 Stat. 706</center></p></div> <!--Title goes here-->
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="14.jfif" class="ag-timeline-card_img" width="640" height="360" /> <!--Immage goes here-->
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+                                        <div class="ag-timeline-card_title">Henry</div> <!--Card Title goes here-->
+                                        <div class="ag-timeline-card_desc">
+                                            The <a href="https://constitution.congress.gov/browse/essay/intro.3-4/ALDE_00000388/" target="_blank">Fourteenth Amendment</a> stated that anyone born or naturalized in the U.S. were citizens, and if any states were to deny or suppress the immunities or privileges of men over the age of 21, they'd be subject to proportional reductions in its representation in the U.S. House of Representatives. This was approved by the 39th Congress during 1865-1867 and was ratified by the states on July 9, 1868.
+                                            <!--Text goes here-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry--> <!--Start of Right Side Entry-->
+                        <!--Entry Dad-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="ag-timeline-card_meta-box">
+                                    <!--notice these are in reverse order because these are on the right side-->
+                                    <div class="ag-timeline-card_meta">FIRST RECONSTRUCTION ACT<p style="font-size:12px"<center>14 Stat. 428</center></p></div>
+                                </div>
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="ag-timeline-card_point">1867</div>
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="reconstruction.jfif" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+                                        <div class="ag-timeline-card_title">Civil Rights Act of 1866</div>
+                                        <div class="ag-timeline-card_desc">
+                                            The  <a href="https://9lib.org/article/reconstruction-act-chapter-civil-war-reconstruction.zx53r9o4" target="_blank">First Reconstruction Act</a>   divided the former Confederate States into five military states, which were each administered by a general who'd maintain law and order. This act required former Confederate states to adopt these new constitutions, ratify the Fourteenth Amendment, and allow African American suffrage for readmission to the Union. This was passed by the 39th Congress between 1865 and 1867.
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry-->
+                        <!--Start of Left Side Entry-->
+                        <!--Entry Henry-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="ag-timeline-card_point">1869</div> <!-- Date goes here-->
+                                </div>
+                                <div class="ag-timeline-card_meta-box">
+                                    <div class="ag-timeline-card_meta">SECOND RECONSTRUCTION ACT<p style="font-size:12px"<center>15 Stat.2</center></p></div> <!--Title goes here-->
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="america.jfif" class="ag-timeline-card_img" width="640" height="360" /> <!--Immage goes here-->
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+                                        <div class="ag-timeline-card_title">Henry</div> <!--Card Title goes here-->
+                                        <div class="ag-timeline-card_desc">
+                                            The <a href="https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Keeping-the-Faith/Civil-Rights-Movement/" target="_blank">Second Reconstruction Act</a>  allowed for the election of delegates to participate in constitutional conventions in the former Confederate states and required that the governors of each military district are to register all male citizens to vote, granted they were at least 21 years old, and have taken an oath of loyalty and haven to been disenfranchised for participating in the rebellion against the United States. Drafts of state constitutions were required to be submitted to Congress for approval. This was passed by the 40th Congress between 1867-1869.
+                                            <!--Text goes here-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry--> <!--Start of Right Side Entry-->
+                        <!--  End Entry--> <!--Start of Right Side Entry-->
+                        <!--Entry Dad-->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                                <div class="ag-timeline-card_meta-box">
+                                    <!--notice these are in reverse order because these are on the right side-->
+                                    <div class="ag-timeline-card_meta">THIRD RECONSTRUCTION ACT<p style="font-size:12px"<center>15 Stat.14</center></p></div>
+                                </div>
+                                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                    <div class="ag-timeline-card_point">1869</div>
+                                </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                                <div class="ag-timeline-card_inner">
+                                    <div class="ag-timeline-card_img-box">
+                                        <img src="reconstruction.jfif" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                                    </div>
+                                    <div class="ag-timeline-card_info">
+                                        <div class="ag-timeline-card_title">Civil Rights Act of 1866</div>
+                                        <div class="ag-timeline-card_desc">
+                                            The  <a href="https://9lib.org/article/reconstruction-act-chapter-civil-war-reconstruction.zx53r9o4" target="_blank"></a>   Governors of each military district that were established in former Confederate states had absolute authority over all civilian and military officials at both the state and local level. The act also granted that governors of each military district have the power to determine the eligibility of voters. This was passed by the 40th Congress between 1867 and 1869.
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                        </div>
+                        <!--  End Entry-->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src='jquery.min.js'></script>
+    <script id="rendered-js">
+        (function ($) {
+            $(function () {
+
+
+                $(window).on('scroll', function () {
+                    fnOnScroll();
+                });
+
+                $(window).on('resize', function () {
+                    fnOnResize();
+                });
+
+
+                var agTimeline = $('.js-timeline'),
+                    agTimelineLine = $('.js-timeline_line'),
+                    agTimelineLineProgress = $('.js-timeline_line-progress'),
+                    agTimelinePoint = $('.js-timeline-card_point-box'),
+                    agTimelineItem = $('.js-timeline_item'),
+                    agOuterHeight = $(window).outerHeight(),
+                    agHeight = $(window).height(),
+                    f = -1,
+                    agFlag = false;
+
+                function fnOnScroll() {
+                    agPosY = $(window).scrollTop();
+
+                    fnUpdateFrame();
+                }
+
+                function fnOnResize() {
+                    agPosY = $(window).scrollTop();
+                    agHeight = $(window).height();
+
+                    fnUpdateFrame();
+                }
+
+                function fnUpdateWindow() {
+                    agFlag = false;
+
+                    agTimelineLine.css({
+                        top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+                        bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+                    });
+
+
+                    f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+                }
+
+                function fnUpdateProgress() {
+                    var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+                    i = agTop + agPosY - $(window).scrollTop();
+                    a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+                    n = agPosY - a + agOuterHeight / 2;
+                    i <= agPosY + agOuterHeight / 2 && (n = i - a);
+                    agTimelineLineProgress.css({ height: n + "px" });
+
+                    agTimelineItem.each(function () {
+                        var agTop = $(this).find(agTimelinePoint).offset().top;
+
+                        agTop + agPosY - $(window).scrollTop() < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+                    });
+                }
+
+                function fnUpdateFrame() {
+                    agFlag || requestAnimationFrame(fnUpdateWindow);
+                    agFlag = true;
+                }
+
+
+            });
+        })(jQuery);
+                                                    //# sourceURL=pen.js
+    </script>
+
+
+
+</body>
+
+</html>
+
